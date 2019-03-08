@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+float main()
+{
+	double a, b, c, d, e, f, g;
+	cout << "Enter net balance: "<<endl;
+	cin >> a;
+	cout << "Enter payment made: "<<endl;
+	cin >> b;
+	cout << "Enter number of days in billing cycle: "<<endl;
+	cin >> c;
+	cout << "Number of days payment is made before billing cycle: "<<endl;
+	cin >> d;
+	cout << "Enter interest per month: "<< endl;
+	cin >> e;
+
+	f = (a * c - b * d) / c;
+	g = (f * e); 
+	cout << "The Interest is: " << g <<endl;
+
+
+	_getch();
+	return 0;
+
+}
